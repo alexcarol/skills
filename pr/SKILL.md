@@ -1,6 +1,6 @@
 ---
 name: pr
-description: Commit all changes and open a pull request. If currently on main/master, creates a new branch first. Handles branch creation, commit, push, and PR creation end-to-end.
+description: Open a pull request. Only invoke when the user explicitly asks to open, create, or raise a PR or pull request — not for plain commits or pushes.
 user-invocable: true
 allowed-tools: Bash
 ---

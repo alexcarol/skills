@@ -5,7 +5,7 @@ A collection of Claude Code skills.
 ## Installation
 
 ```bash
-npx skills add alexcarol/skills --global --copy
+npx skills add alexcarol/skills --global --copy -y
 ```
 
 ## Skills

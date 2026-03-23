@@ -38,6 +38,14 @@ Key frontmatter fields:
 
 Edit only `<skill-name>/SKILL.md`. Do not rename folders without updating `README.md`.
 
+## Installing skills locally
+
+From the repo root:
+
+```bash
+npx skills add ./ --yes --global --copy
+```
+
 ## Conventions
 
 - Instructions should be imperative and step-by-step

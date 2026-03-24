@@ -24,26 +24,14 @@ Follow the standard commit protocol:
 1. Run `git status` and `git diff` to review all changes
 2. Stage relevant files (avoid `.env`, secrets, large binaries)
 3. Write a concise commit message focused on *why*, not *what*
-4. Commit with:
-```
-git commit -m "$(cat <<'EOF'
-<message>
-
-Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
-EOF
-)"
-```
+4. Commit
 
 ## Step 3 — Push
-
-Push the branch to remote:
-```
-git push -u origin <branch-name>
-```
+Push the branch to the intended remote
 
 ## Step 4 — Open PR
 
-Create the PR with `gh pr create`:
+Create the PR with `gh pr create`. If possible use an existing PR template, if none there use this format:
 - Title: short (under 70 chars), imperative mood
 - Body: 1-3 bullet summary + test plan checklist
 
@@ -54,8 +42,6 @@ gh pr create --title "<title>" --body "$(cat <<'EOF'
 
 ## Test plan
 - [ ] <test steps>
-
-🤖 Generated with [Claude Code](https://claude.com/claude-code)
 EOF
 )"
 ```
